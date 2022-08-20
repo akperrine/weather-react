@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --linear-fade: linear-gradient(#ffffff, #b7b7b7);
+}
+
+.app-container {
+  position: absolute;
+  width: 100%;
+}
+
+.display-container {
+  /* position: absolute; */
+  border: 5px solid black;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./imgs/partly_cloudy.jpg);
+  background-color: white;
+  min-height: 100vh;
+}
+
+.rain-display-container {
+  border: 5px solid black;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./imgs/cloudy_rain.jpg);
+  min-height: 100vh;
+}
+
+.city-container {
+  margin: 50px;
+  width: 40%;
+  height: 200px;
+  padding: 20px, 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background: var(--linear-fade);
+  font-family: Futura, sans-serif;
+  box-shadow: 10px 10px 10px rgb(21, 20, 20);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+.city-container h2 {
+  font-size: 2.75rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.current-temp {
+  font-size: 2rem;
+}
+
+.forcast-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 50px;
+  background-color: var(--linear-fade);
+}
+
+.forcast-list .forcast-container {
+  min-height: 200px;
+  min-width: 200px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: var(--linear-fade);
+  box-shadow: 10px 10px 10px rgb(21, 20, 20);
+}
+
+.sun {
+  height: 3rem;
+}

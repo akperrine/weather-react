@@ -1,0 +1,14 @@
+.weather-info {
+  color: white;
+  margin-top: 50px;
+}
+
+.weather-info ul {
+  list-style-type: none;
+  font-size: 3rem;
+  font-family: Futura;
+}
+/* 
+.weather-info li {
+  font-size: 4rem;
+} */

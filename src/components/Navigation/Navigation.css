@@ -1,0 +1,49 @@
+nav {
+  background-color: rgb(101, 96, 96);
+  display: flex;
+  justify-content: center;
+  height: 7vh;
+  padding: 10px;
+}
+
+.search-btn {
+  text-decoration: none;
+  position: relative;
+  border-radius: 100px;
+  border: solid black 1px;
+  box-shadow: 10px, 10px, 20px, rgb(0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-btn .spy {
+  position: absolute;
+  color: grey;
+  height: 2em;
+  margin: 6px;
+  margin-right: 10px;
+  opacity: 0.3;
+  overflow: hidden;
+}
+
+input {
+  font: inherit;
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  box-shadow: 1px, 1px;
+}
+
+.paginate-container {
+  font: inherit;
+  height: 100%;
+  font-size: 1.5rem;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  box-shadow: 1px, 1px;
+  min-width: 100px;
+}
