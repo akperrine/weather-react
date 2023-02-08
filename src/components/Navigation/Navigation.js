@@ -11,6 +11,13 @@ import "./Navigation.css";
 const Navigation = ({ searchChange, inputValue }) => {
   const [search, setSearch] = useState(null);
 
+  const asyncPaginateStyles = {
+    control: (base) => ({
+      ...base,
+      width: 300,
+    }),
+  };
+
   const handleChange = (inputValue) => {
     // console.log("happened");
     setSearch(inputValue);
@@ -42,6 +49,7 @@ const Navigation = ({ searchChange, inputValue }) => {
         <div className="paginate-container">
           <AsyncPaginate
             placeholder="Search for a city"
+            styles={asyncPaginateStyles}
             debounceTimeout={750}
             value={search}
             onChange={handleChange}
